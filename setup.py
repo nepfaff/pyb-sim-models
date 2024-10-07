@@ -8,6 +8,6 @@ setup(
     author_email='philippe.nadeau@robotics.utias.utoronto.ca',
     license='MIT',
     packages=['pbsm', 'pbsm.ur5_2f85', 'pbsm.ur5', 'pbsm.Robotiq2f85'],
-    install_requires=['pybullet', 'numpy', 'urdfpy'],
+    install_requires=['pybullet', 'numpy', 'scipy'],
     include_package_data=True
 )
