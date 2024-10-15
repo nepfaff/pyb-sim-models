@@ -29,8 +29,10 @@ class CompositeTestObject:
     # mass: Mass of the object.
     def inertiaWrtS(self, I_com, com_s, C_cs, mass):
         # 1. Uses a similarity transform to align the axes of the I_com to frame S. (Rotation)
+        # I_cs is still about the CoM but expressed in frame S.
         I_cs = C_cs @ I_com @ C_cs.T
         # 2. Uses the parallel axis theorem to express the inertia tensor wrt frame S. (Translation)
+        # I_s is about the origin of frame S and expressed in frame S.
         I_s = I_cs - mass * self.skew(com_s) @ self.skew(com_s)
         return I_s
 
