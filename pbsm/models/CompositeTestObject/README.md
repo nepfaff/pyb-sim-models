@@ -33,7 +33,7 @@ The bolt holes (Bx) and weight holes (Wy) are referred using a number system tha
 
 ### Example
 ```
-phil@stars:~/composite-test-object$ python3 GenerateObjectConfiguration.py -b 0 14 -s 0 1 2 3 4 -o test.urdf
+phil@stars:~/composite-test-object$ python3 GenerateObjectConfiguration.py -b 0 14 -s 0 1 2 3 4 -o test.urdf --print
 test.urdf
 1.7036018760742466
 [0.         0.01433761 0.025     ]
