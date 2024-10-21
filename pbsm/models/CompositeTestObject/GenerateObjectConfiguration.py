@@ -158,7 +158,7 @@ class CompositeTestObject:
         # 1000 Kg/m^3 = 1 g/cm^3
         # Simulation values: PLA=260, ABS=1040, Steel=7770
         # Real-world values: PLA=491, ABS=1321, Steel=7847
-        PLA_struct_density = 491  # Assumes a 20% infill
+        PLA_struct_density = 420  # Computed from real mass and onshape volume
         ABS_density = 1321
         steel_density = 7847
 
