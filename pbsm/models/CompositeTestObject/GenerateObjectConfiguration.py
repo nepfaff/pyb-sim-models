@@ -238,7 +238,7 @@ class CompositeTestObject:
 
         #Mass density of materials in kg/m^3
         # 1000 Kg/m^3 = 1 g/cm^3
-        PLA_struct_density  = 491  #Assumes a 20% infill
+        PLA_struct_density  = 420   # Computed from real mass and onshape volume
         ABS_density         = 1321
         steel_density       = 7847
         bolt_density        = 6730
