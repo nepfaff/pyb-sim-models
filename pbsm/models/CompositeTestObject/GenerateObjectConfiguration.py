@@ -240,7 +240,8 @@ class CompositeTestObject:
         # 1000 Kg/m^3 = 1 g/cm^3
         PLA_struct_density  = 491  #Assumes a 20% infill
         ABS_density         = 1321
-        steel_density       = 7847  
+        steel_density       = 7847
+        bolt_density        = 6730
 
         #Initially, we assume that the whole body is filled with plastic.
         mm_to_m = 1e-3
@@ -312,7 +313,7 @@ class CompositeTestObject:
 
         #Add bolts
         for bolt in bolts_attached:
-            i = cylinder_inertia([b_r,b_h], steel_density, rpy_to_pose_mat(0,0,0, bolt_pos[bolt]))
+            i = cylinder_inertia([b_r,b_h], bolt_density, rpy_to_pose_mat(0,0,0, bolt_pos[bolt]))
             primitives.append(i)
 
         #Add steel weights
